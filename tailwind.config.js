@@ -18,7 +18,7 @@ export default {
         'background-color': 'rgb(30, 30, 30)'
       },
       backgroundImage: {
-        'list-gradient': 'linear-gradient(200deg, rgba(0, 176, 190, 1) 0%, rgba(1, 129, 168, 1) 100%)',
+        'craftlist-gradient': 'linear-gradient(200deg, rgba(0, 176, 190, 1) 0%, rgba(1, 129, 168, 1) 100%)',
         'background-gradient': 'url(\'./assets/background/background.svg\')',
       },
       backgroundSize: {
@@ -35,6 +35,9 @@ export default {
         'shadow-top': 'inset 0px 5px 20px 10px rgba(255, 255, 255, 0.015)',
         'shadow-bottom': 'inset 0px -5px 20px 10px rgba(255, 255, 255, 0.015)',
       },
+      opacity: {
+        '2.5': '2.5'
+      }
     },
   },
   plugins: [],
