@@ -4,10 +4,10 @@ import NavBurger from "~/components/utils/NavBurger.vue";
 </script>
 
 <template>
-  <header class="z-50 relative bg-craftlist-gradient w-screen flex justify-center items-center py-1 text-white">
+  <header class="z-60 relative bg-craftlist-gradient w-screen flex justify-center items-center py-1 text-white">
     <NuxtLink to='/premium' class="text-sm font-medium">👋 Pierwsze 10 dni <span class="uppercase font-bold">premium</span> za 50%!👋</NuxtLink>
   </header>
-  <nav class="z-30 w-screen md:flex select-none top-0 sticky items-center text-xl text-white">
+  <nav :class="`${showBurgerDiv ? 'z-40' : 'z-50'} w-screen md:flex select-none top-0 sticky items-center text-xl text-white`">
     <div class="flex items-center">
       <NuxtLink to="/">
         <img src="~/assets/logo/bialy-bok.svg" alt="Logo" class="h-48 md:h-32 lg:h-36 xl:h-48">

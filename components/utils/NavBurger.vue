@@ -3,7 +3,7 @@ import {showBurger} from "assets/utils/navBurgerLib";
 </script>
 
 <template>
-  <div class="z-40 w-screen h-screen absolute top-0 backdrop-blur-xl">
+  <div class="z-60 w-screen h-screen absolute top-0">
     <div class="text-6xl absolute right-[10%] top-[8%]" @click="showBurger()" @onkeypress="showBurger()" role="button" tabindex="0">
       <UIcon name="i-heroicons-x-mark" />
     </div>
