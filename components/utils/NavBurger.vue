@@ -3,8 +3,8 @@ import {showBurger} from "assets/utils/navBurgerLib";
 </script>
 
 <template>
-  <div class="z-60 w-screen h-screen absolute top-0">
-    <div class="text-6xl absolute right-[10%] top-[8%]" @click="showBurger()" @onkeypress="showBurger()" role="button" tabindex="0">
+  <div class="z-30 w-screen h-screen absolute top-0">
+    <div class="text-6xl absolute right-[10%] top-[10%]" @click="showBurger()" @onkeypress="showBurger()" role="button" tabindex="0">
       <UIcon name="i-heroicons-x-mark" />
     </div>
     <div class="flex items-center justify-center h-[60%]">
@@ -16,9 +16,13 @@ import {showBurger} from "assets/utils/navBurgerLib";
         </NuxtLink>
       </div>
     </div>
-    <div class="flex flex-row justify-center ml-auto space-x-6 text-lg">
-      <button class="w-48 h-16 rounded-2xl border border-white border-opacity-20 bg-white bg-opacity-5 shadow-blur backdrop-blur-[20%]">Rozpocznij teraz</button>
-      <button class="w-36 h-16 rounded-2xl bg-craftlist-gradient text-background-color">Zaloguj się</button>
+    <div class="flex flex-row justify-center ml-auto space-x-6 text-lg cursor-pointer">
+      <NuxtLink to="/#faq">
+        <button class="w-48 h-16 rounded-2xl border border-white border-opacity-20 bg-white bg-opacity-5 shadow-blur backdrop-blur-[20%]">Rozpocznij teraz</button>
+      </NuxtLink>
+      <Nuxt-link to="/login">
+        <button class="w-36 h-16 rounded-2xl bg-craftlist-gradient text-background-color">Zaloguj się</button>
+      </Nuxt-link>
     </div>
   </div>
 </template>

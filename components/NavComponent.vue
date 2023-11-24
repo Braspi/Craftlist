@@ -1,13 +1,12 @@
 <script setup lang="ts">
 import {showBurger, showBurgerDiv} from "assets/utils/navBurgerLib";
-import NavBurger from "~/components/utils/NavBurger.vue";
 </script>
 
 <template>
-  <header class="z-60 relative bg-craftlist-gradient w-screen flex justify-center items-center py-1 text-white">
+  <header class="z-10 relative bg-craftlist-gradient w-screen flex justify-center items-center py-1 text-white">
     <NuxtLink to='/premium' class="text-sm font-medium">👋 Pierwsze 10 dni <span class="uppercase font-bold">premium</span> za 50%!👋</NuxtLink>
   </header>
-  <nav :class="`${showBurgerDiv ? 'z-40' : 'z-50'} w-screen md:flex select-none top-0 sticky items-center text-xl text-white`">
+  <nav :class="`${showBurgerDiv ? 'z-10' : 'z-20'} w-screen md:flex select-none top-0 sticky items-center text-xl text-white`">
     <div class="flex items-center">
       <NuxtLink to="/">
         <img src="~/assets/logo/bialy-bok.svg" alt="Logo" class="h-48 md:h-32 lg:h-36 xl:h-48">
@@ -26,10 +25,13 @@ import NavBurger from "~/components/utils/NavBurger.vue";
         </NuxtLink>
       </div>
     </div>
-    <navBurger v-if="showBurgerDiv" />
       <div class="hidden md:flex md:justify-center md:items-center ml-auto mr-[3%] space-x-6 sm:text-sm xl:text-lg">
-        <button class="sm:w-32 xl:w-48 sm:h-12 xl:h-16 rounded-2xl border border-white border-opacity-20 bg-white bg-opacity-5 shadow-blur backdrop-blur-[20%]">Rozpocznij teraz</button>
-        <button class="sm:w-24 xl:w-36 sm:h-12 xl:h-16 rounded-2xl bg-craftlist-gradient text-background-color">Zaloguj się</button>
+        <NuxtLink to="/">
+          <button class="sm:w-32 xl:w-48 sm:h-12 xl:h-16 rounded-2xl border border-white border-opacity-20 bg-white bg-opacity-5 shadow-blur backdrop-blur-[20%]">Rozpocznij teraz</button>
+        </NuxtLink>
+        <NuxtLink to="/login">
+          <button class="sm:w-24 xl:w-36 sm:h-12 xl:h-16 rounded-2xl bg-craftlist-gradient text-background-color">Zaloguj się</button>
+        </NuxtLink>
       </div>
   </nav>
 </template>

@@ -1,14 +1,17 @@
 <script lang="ts" setup>
 import {showBurgerDiv} from "assets/utils/navBurgerLib";
+import NavBurger from "~/components/utils/NavBurger.vue";
 
 document.body.classList.add('bg-background-color')
 </script>
 
 <template>
-  <div v-if="showBurgerDiv" class="backdrop-blur-xl w-screen h-screen fixed z-40" />
+  <navBurger v-if="showBurgerDiv" />
+  <div v-if="showBurgerDiv" class="backdrop-blur-xl w-screen h-screen fixed z-20" />
   <section class="flex flex-col h-screen">
     <NavComponent />
-    <main class="flex-grow z-30 w-screen m-auto relative scroll-smooth">
+    <main class="flex-grow z-10 w-screen m-auto relative scroll-smooth">
+      <ServersComponent />
     </main>
     <FooterComponent />
   </section>
