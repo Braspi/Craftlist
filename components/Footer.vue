@@ -21,7 +21,7 @@
     </section>
     <section class="w-full pt-2">
       <a href="https://notbytes.com" target="_blank" class="text-sm md:text-md text-white">
-        Wykonanie graficzne <UtilsSpanGradient text="notbytes.com" casing="lowercase" weight="bold"/>
+        Wykonanie graficzne <UtilsSpanGradient text="ycode.pl" casing="lowercase" weight="bold"/>
       </a>
     </section>
     <section class="w-full p-[0.1rem] my-3 rounded bg-craftlist-gradient"></section>

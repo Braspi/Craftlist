@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import {showBurgerDiv} from "assets/utils/navBurgerLib";
+import NavBurger from "~/components/utils/NavBurger.vue";
 
 definePageMeta
 ({
@@ -10,11 +11,11 @@ document.body.classList.add('bg-background-color')
 </script>
 
 <template>
-  <navBurger v-if="showBurgerDiv" />
+  <NavBurger v-if="showBurgerDiv" />
   <div v-if="showBurgerDiv" class="backdrop-blur-xl w-screen h-screen fixed z-20" />
-  <section class="flex flex-col h-screen">
+  <section class="flex flex-col h-screen text-white">
     <Nav/>
-    <main class="flex-grow z-10 w-screen m-auto relative scroll-smooth">
+    <main class="flex-grow z-10 w-screen m-auto relative scroll-smooth px-[5vw]">
       <Servers/>
     </main>
     <Footer/>

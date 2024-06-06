@@ -3,8 +3,8 @@ import {showBurger} from "assets/utils/navBurgerLib";
 </script>
 
 <template>
-  <div class="z-30 w-screen h-screen absolute top-0">
-    <div class="text-6xl absolute right-[10%] top-[10%]" @click="showBurger()" @onkeypress="showBurger()" role="button" tabindex="0">
+  <div class="z-30 w-screen h-screen absolute top-0 text-white">
+    <div class="text-6xl absolute py-[10vh] px-[5vw] right-0" @click="showBurger()" @onkeypress="showBurger()" role="button" tabindex="0">
       <UIcon name="i-heroicons-x-mark" />
     </div>
     <div class="flex items-center justify-center h-[60%]">
