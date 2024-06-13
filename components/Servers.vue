@@ -15,7 +15,7 @@
             <h2>CraftMC.PL ➟ Strona WWW:</h2>
             <h2>www.craftmc.pl Nowa edycja SkyBlock </h2>
           </div>
-          <div class="flex gap-2 opacity-90 mt-2 scale-90 md:scale-100 -translate-x-4">
+          <div class="flex gap-2 opacity-90 mt-2 scale-90 md:scale-100 -translate-x-4 xl:-translate-x-0">
             <UButton
                 class="transition-all"
                 icon="i-lucide-heart"

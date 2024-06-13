@@ -18,7 +18,7 @@ import {showBurger, showBurgerDiv} from "assets/utils/navBurgerLib";
     <div class="md:flex md:items-center md:justify-center">
       <div class="hidden h-8 xl:h-12 w-px bg-white opacity-30 md:inline-block"/>
       <div class="hidden w-fit font-light space-x-8 sm:ml-7 xl:ml-10 md:inline-block md:text-base xl:text-xl">
-        <NuxtLink to="/">Losuj serwer</NuxtLink>
+        <NuxtLink to="/losuj">Losuj serwer</NuxtLink>
         <NuxtLink to="/">Dodaj serwer</NuxtLink>
         <NuxtLink to="/">
           <UtilsSpanGradient class="w-full" text="Premium" weight="medium" tabindex="-1"/>

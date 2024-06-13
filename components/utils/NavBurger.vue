@@ -9,7 +9,7 @@ import {showBurger} from "assets/utils/navBurgerLib";
     </div>
     <div class="flex items-center justify-center h-[60%]">
       <div class="flex flex-col items-center justify-around gap-12 text-xl">
-        <NuxtLink to="/">Losuj serwer</NuxtLink>
+        <NuxtLink to="/losuj">Losuj serwer</NuxtLink>
         <NuxtLink to="/">Dodaj serwer</NuxtLink>
         <NuxtLink to="/">
           <UtilsSpanGradient text="Premium" weight="medium" tabindex="-1"/>
